@@ -1,13 +1,10 @@
-
-
-#Portal About Page#####
+# Portal About Page
 fluidRow(
   class="portal-about",
-  
   column(
     width=12,
-    includeMarkdown(paste0("www/RMD/introduction_", fname, ".Rmd")) 
+    includeMarkdown(
+      file.path("www/RMD", paste0("introduction_", fname, ".Rmd"))
+    )
   )
 )
-
-
